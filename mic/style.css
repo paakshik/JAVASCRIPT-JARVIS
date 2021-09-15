@@ -1,0 +1,197 @@
+body {
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 500px;
+	justify-content: center;
+	background-color: black;
+	background: black
+}
+#start {
+	top: 150px;
+	left: 34.20%;
+	border: rgb(92, 150, 209);
+	background-color: rgb(22, 26, 27);
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: 0px 0px 32px 8px rgb(18, 20, 20), 0px 0px 4px 1px rgb(18, 20, 20) inset
+}
+
+.reactor-container {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	border: 1px dashed #888;
+	position: relative;
+	border-radius: 50%;
+	background-color: #0ba5c0;
+	border: 1px solid rgb(58, 95, 95);
+	box-shadow: 0px 0px 32px 8px rgb(18, 20, 20), 0px 0px 4px 1px rgb(18, 20, 20) inset;
+	box-shadow: 0px 0px 32px 8px rgb(18, 20, 20), 0px 0px 4px 1px rgb(18, 20, 20) inset;
+	position: absolute;
+	left: 3%;
+	top: 8%
+}
+.reactor-container-inner {
+	height: 238px;
+	width: 238px;
+	background-color: rgb(48, 192, 228);
+	box-shadow: 0px 0px 4px 1px #52FEFE
+}
+.circle {
+	border-radius: 50%
+}
+.tunnel.circle.abs-center {
+	position: absolute;
+	top: 2%
+}
+.reactor-container-inner.circle.abs-center {
+	position: absolute;
+	top: 2%;
+	background-color: azure
+}
+.core-inner.circle.abs-center {
+	position: absolute;
+	top: 2%;
+	opacity: 50%
+}
+.abs-center {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto
+}
+.core-inner {
+	width: 70px;
+	height: 70px;
+	border: 5px solid #1B4E5F;
+	background-color: #FFF;
+	box-shadow: 0px 0px 7px 5px #52FEFE, 0px 0px 10px 10px #52FEFE inset
+}
+.core-outer {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #52FEFE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 2px 1px #52FEFE, 0px 0px 10px 5px #52FEFE inset;
+	opacity: 50%
+}
+.core-wrapper {
+	width: 180px;
+	height: 180px;
+	background-color: #040708;
+	box-shadow: 0px 0px 5px 4px #52FEFE, 0px 0px 6px 2px #52FEFE inset
+}
+.tunnel {
+	width: 220px;
+	height: 220px;
+	background-color: #050303;
+	box-shadow: 0px 0px 5px 1px #52FEFE, 0px 0px 5px 4px #52FEFE inset
+}
+.coil-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	animation: 3s infinite linear reactor-anim
+}
+.coil {
+	position: absolute;
+	width: 5px;
+	height: 30px;
+	top: calc(50% - 110px);
+	left: calc(50% - 15px);
+	transform-origin: 15px 110px;
+	background-color: rgb(2, 0, 0);
+	box-shadow: 0px 0px 5px #53FEFE inset;
+	box-shadow: 0px 0px 5px 1px #52FEFE, 0px 0px 5px 4px #52FEFE inset
+}
+.coil-1 {
+	transform: rotate(0deg)
+}
+.coil-2 {
+	transform: rotate(45deg)
+}
+.coil-3 {
+	transform: rotate(90deg)
+}
+.coil-4 {
+	transform: rotate(135deg)
+}
+.coil-5 {
+	transform: rotate(180deg)
+}
+.coil-6 {
+	transform: rotate(225deg)
+}
+.coil-7 {
+	transform: rotate(270deg)
+}
+.coil-8 {
+	transform: rotate(315deg)
+}
+.coil-9 {
+	transform: rotate(360deg)
+}
+.coil-10 {
+	transform: rotate(405deg)
+}
+.coil-11 {
+	transform: rotate(460deg)
+}
+@keyframes reactor-anim {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+#start.listen {
+	background-color: rgb(231, 238, 240)
+}
+canvas {
+	display: block
+}
+* {
+	box-sizing: border-box
+}
+.container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+.circle {
+	border-radius: 50%;
+	background: linear-gradient(90deg, #1c1e20, black);
+	top: 100%
+}
+#start {
+	text-align: center;
+	width: 10;
+	height: 10;
+	z-index: 1000;
+	position: absolute;
+	top: 40%;
+	left: 39%;
+	background: rgb(3, 3, 3)
+}
+@keyframes spin {
+	0% {
+		transform: translate(-50%, -50%)rotate(0deg)
+	}
+	100% {
+		transform: translate(-50%, -50%)rotate(350deg)
+	}
+}
+@keyframes spin2 {
+	0% {
+		transform: translate(-50%, -50%)rotate(45deg)
+	}
+	100% {
+		transform: translate(-50%, -50%)rotate(405deg)
+	}
+}

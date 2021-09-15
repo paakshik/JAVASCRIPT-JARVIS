@@ -1,0 +1,166 @@
+.talk {
+  background-color:rgb(41, 211, 211) ;
+  width: 265px;
+  height: 265px;
+  border-bottom: solid 20px rgb(92, 167, 167);
+  border-left: solid 20px rgb(92, 167, 167);
+  border-top: solid 20px rgb(92, 167, 167);
+  border-right: solid 20px rgb(92, 167, 167);
+  border-radius: 50%;
+  top: 50%;
+  left: 700px;
+  right: 30%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+
+  position: absolute
+}
+.talk2{
+  border-radius: 50%;
+	left: 43.5%;
+	top: 39%;
+	position: absolute;
+	width: 82px;
+	height: 82px;
+	background-color: #00ffff;
+	color: #00ffff;
+	opacity: .6;
+	z-index: 100;
+  border: transparent;
+}
+.reactor-container {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	border: 1px dashed #888;
+	position: relative;
+	border-radius: 50%;
+	background-color: #384c50;
+	border: 1px solid #121414;
+	box-shadow: 0 0 32px 8px #121414, 0 0 4px 1px #121414 inset;
+	position: absolute;
+	left: 35%;
+	top: 20%
+}
+.reactor-container-inner {
+	height: 238px;
+	width: 238px;
+	background-color: #161a1b;
+	box-shadow: 0 0 4px 1px #52fefe
+}
+@keyframes reactor-anim {
+	from {
+		transform: rotate(0)
+	}
+	to {
+		transform: rotate(360deg)
+	}
+}
+.circle {
+	border-radius: 50%
+}
+#express {
+	position: absolute;
+	left: 90%;
+	top: 85%;
+	text-align: center;
+	border: 2px solid #cf0d0d;
+	border-color: #000;
+	font: 1em monospace;
+	font-size: 90px;
+	font-weight: bolder;
+	font-stretch: ultra-expanded
+}
+.abs-center {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto
+}
+.core-inner {
+	width: 70px;
+	height: 70px;
+	border: 5px solid #1b4e5f;
+	background-color: #fff;
+	box-shadow: 0 0 7px 5px #52fefe, 0 0 10px 10px #52fefe inset
+}
+.core-outer {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #52fefe;
+	background-color: #fff;
+	box-shadow: 0 0 2px 1px #52fefe, 0 0 10px 5px #52fefe inset
+}
+.core-wrapper {
+	width: 180px;
+	height: 180px;
+	background-color: #073c4b;
+	box-shadow: 0 0 5px 4px #52fefe, 0 0 6px 2px #52fefe inset
+}
+.tunnel {
+	width: 220px;
+	height: 220px;
+	background-color: #fff;
+	box-shadow: 0 0 5px 1px #52fefe, 0 0 5px 4px #52fefe inset
+}
+.coil-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	animation: 3s infinite linear reactor-anim
+}
+.coil {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	top: calc(50% - 110px);
+	left: calc(50% - 15px);
+	transform-origin: 15px 110px;
+	background-color: #073c4b;
+	box-shadow: 0 0 5px #53fefe inset
+}
+.coil-1 {
+	transform: rotate(0)
+}
+.coil-2 {
+	transform: rotate(45deg)
+}
+.coil-3 {
+	transform: rotate(90deg)
+}
+.coil-4 {
+	transform: rotate(135deg)
+}
+.coil-5 {
+	transform: rotate(180deg)
+}
+.coil-6 {
+	transform: rotate(225deg)
+}
+.coil-7 {
+	transform: rotate(270deg)
+}
+.coil-8 {
+	transform: rotate(315deg)
+}
+
+.p5Canvas {
+  display: none
+}
+body {
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 40px;
+  background-color: rgb(5, 6, 7)
+}
+@keyframes spin2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg)
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(405deg)
+  }
+}
